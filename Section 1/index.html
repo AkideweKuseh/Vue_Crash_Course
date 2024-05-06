@@ -6,8 +6,17 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
   </head>
   <body>
-    <div id="app">
-      <h1>{{ fullName() }}</h1>
+    <div id="app" v-cloak>
+      <p>{{ fullName() }}</p>
+      <hr/>
+      <p><a v-bind:href="url" target="_blank">Google🔍</a></p>
+      <p v-html="raw_url"></p>
+
+      <label for="firstName">First name</label>
+      <input type="text" v-model="firstName">
+
+      <label for="lastName">Last name</label>
+      <input type="text" v-model="lastName">
     </div>
 
     <!-- <div id="vapp">
