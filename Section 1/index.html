@@ -11,12 +11,20 @@
       <hr/>
       <p><a v-bind:href="url" target="_blank">Google🔍</a></p>
       <p v-html="raw_url"></p>
+      <p>{{ age }}</p>
 
       <label for="firstName">First name</label>
       <input type="text" v-model="firstName">
 
+      
+      <label for="firstName">Middle name</label>
+      <input type="text" @keyup.enter="updateMiddleName">
+
       <label for="lastName">Last name</label>
-      <input type="text" v-model="lastName">
+      <input type="text" :value="lastName" @input.prevent="updateLastName('Lastname event triggered',$event)">
+
+      <button type="button" @click="increment">Increase</button>
+      <button type="button" @click="decrement">Decrease</button>
     </div>
 
     <!-- <div id="vapp">
