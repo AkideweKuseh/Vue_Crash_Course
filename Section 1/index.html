@@ -3,25 +3,27 @@
   <head>
     <title>VueJS Course</title>
     <link rel="stylesheet" type="text/css" href="main.css" />
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
   </head>
   <body>
     <div id="app" v-cloak>
-      <p>{{ fullName() }}</p>
+      <p>{{ fullName }}</p>
       <hr/>
       <p><a v-bind:href="url" target="_blank">Google🔍</a></p>
       <p v-html="raw_url"></p>
       <p>{{ age }}</p>
 
       <label for="firstName">First name</label>
-      <input type="text" v-model="firstName">
+      <input type="text" v-model.lazy.trim="firstName">
 
       
-      <label for="firstName">Middle name</label>
+      <label for="middelName">Middle name</label>
       <input type="text" @keyup.enter="updateMiddleName">
 
       <label for="lastName">Last name</label>
       <input type="text" :value="lastName" @input.prevent="updateLastName('Lastname event triggered',$event)">
+
+      <label for="age">Age</label>
+      <input type="number" v-model.number="age">
 
       <button type="button" @click="increment">Increase</button>
       <button type="button" @click="decrement">Decrease</button>
@@ -30,6 +32,7 @@
     <!-- <div id="vapp">
       <h1>{{ firstName }} {{ lastName }}</h1>
     </div> -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="app.js"></script>
   </body>
 </html>
