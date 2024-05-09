@@ -1,6 +1,6 @@
 A Vue.js Crash Course By Zero to Mastery
 
-What I learned in section 1;
+``````````````SECTION 1 ```````````````
 Intro to Vue
 creating Vue instances
 Mounting the Vue app
@@ -14,3 +14,9 @@ Key Modifiers
 V-Model modifiers
 Computed properties
 Watchers
+
+
+````````````SECTION 2`````````````````
+Binging Classes
+Binding Styles
+Conditional rendering
