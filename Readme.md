@@ -1,6 +1,6 @@
 A Vue.js Crash Course By Zero to Mastery
 
-What I learned in this section;
+What I learned in section 1;
 Intro to Vue
 creating Vue instances
 Mounting the Vue app
