@@ -7,9 +7,12 @@
 </head>
 
 <body>
-  <div id="app"></div>
+  <div id="app">
+    <p v-if="show">Showing v-if directive Content</p>
+    <p v-else>Showing v-else directive Content</p>
+  </div>
 
-  <script src="https://unpkg.com/vue@next"></script>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
   <script src="app.js"></script>
 </body>
 
