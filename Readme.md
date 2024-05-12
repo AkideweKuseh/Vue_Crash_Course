@@ -20,3 +20,8 @@ Watchers
 Binging Classes
 Binding Styles
 Conditional rendering
+
+``````````````SECTION 3 ```````````````
+Conditional rendering
+Using the template tag in Vue
+V-show directive
