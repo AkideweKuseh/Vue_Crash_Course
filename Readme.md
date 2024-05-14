@@ -25,3 +25,7 @@ Conditional rendering
 Conditional rendering
 Using the template tag in Vue
 V-show directive
+
+``````````````SECTION 4 ```````````````
+List rendering
+The key attribute
