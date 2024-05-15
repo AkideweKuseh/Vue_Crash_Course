@@ -29,3 +29,10 @@ V-show directive
 ``````````````SECTION 4 ```````````````
 List rendering
 The key attribute
+
+``````````````SECTION 5 ```````````````
+Practical application of the key attribute (:key="")
+
+
+``````````````SECTION 6 ```````````````
+Perspective Playground Project
