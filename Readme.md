@@ -36,3 +36,15 @@ Practical application of the key attribute (:key="")
 
 ``````````````SECTION 6 ```````````````
 Perspective Playground Project
+
+``````````````SECTION 7 ```````````````
+Mounting the Vue instance
+Understanding Lifecycle Hooks
+# beforeCreate
+# created
+# beforeMount
+# mounted
+# beforeUpdate
+# updated
+# begoreUnmount
+# unmounted
